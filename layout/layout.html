@@ -50,10 +50,13 @@
           <span id="hamburger-close" class="hamburger material-icons">
             close
           </span>
-          <div class="nav-item">Home</div>
+          <a href="../index.html" class="nav-item">Home</>
           <div class="nav-item">About</div>
           <div class="nav-item">Settings</div>
           <div class="nav-item">Contact</div>
+          <a href="../layout/layout.html"  class="nav-item">Layout</a>
+          <a href="../drawer/drawer.html"  class="nav-item">Drawer</a>
+          <a href="../dialogs/dialogs.html"  class="nav-item">Dialog</a>
           <div class="nav-item">
             <img
               class="avatar-xs"
@@ -91,6 +94,10 @@
             <span class="material-icons md-24"> drafts </span>
             Drafts
           </div>
+          <a>
+            <span class="material-icons md-24"> drafts </span>
+            Drafts
+          </a>
         </div>
       </div>
     </div>
@@ -125,26 +132,19 @@
             if (!event.target.closest(".activate-drawer")) {
               drawerContainer.style.display = "none";
             }
+
+            if(event.target.classList.contains("drawer")){
+              console.log("clicked")
+              drawerContainer.style.display = "flex";
+            }
           },
           false
         );
 
         hamburger.addEventListener("click", () => {
-          if (responsiveNavbar.style.display === "none") {
-            console.log(responsiveNavbar.style.display);
-            responsiveNavbar.style.display = "flex";
-          }
+          responsiveNavbar.style.display = "flex";
+          console.log(responsiveNavbar.style.display)
         });
-
-        document.addEventListener(
-          "click",
-          function (event) {
-            if (!event.target.closest(".hamburger")) {
-              responsiveNavbar.style.display = "none";
-            }
-          },
-          false
-        );
 
         hamburgerClose.addEventListener("click", () => {
           responsiveNavbar.style.display = "none";

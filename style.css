@@ -897,6 +897,7 @@ nav {
 .responsive-navbar {
   display: none;
 }
+
 .responsive-navbar > .nav-item {
   display: none;
 }
