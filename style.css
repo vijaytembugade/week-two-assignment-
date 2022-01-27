@@ -967,6 +967,7 @@ nav {
 .toast-container {
   height: 600px;
   position: relative;
+  margin: 1rem;
 }
 
 .toast {
@@ -981,6 +982,12 @@ nav {
   position: absolute;
   bottom: 2rem;
   left: 1rem;
+}
+
+.toast.baseline{
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .toast-text {
@@ -999,6 +1006,8 @@ nav {
 
 /* chips  */
 
+
+
 .chips {
   display: flex;
   justify-content: center;
@@ -1006,6 +1015,7 @@ nav {
   flex-wrap: wrap;
   height: 10rem;
   gap: 10px;
+  width: 25rem;
 }
 
 .chip {

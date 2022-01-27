@@ -2,9 +2,10 @@
 .dialog-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 100%;
-  
+  background-color:var(--secondary-color);
 }
 
 .dialog {
@@ -43,9 +44,7 @@
     column-gap: 10px;
     align-items:center;
     cursor: pointer;
-    padding: 1rem;
-    
-
+    padding: 0.5rem;
 }
 
 
