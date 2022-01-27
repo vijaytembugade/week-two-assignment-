@@ -852,6 +852,7 @@ nav {
 
 .nav-icon {
   border-radius: 50%;
+  min-width: 0rem;
 }
 
 .nav-icon:hover {
@@ -863,6 +864,11 @@ nav {
   font-size: 1.3rem;
   font-weight: bold;
   margin-right: auto;
+  margin-left: 2rem;
+}
+.nav-brand > img {
+  display: inline-block;
+  width: 7rem;
 }
 
 .nav-item {
@@ -887,7 +893,7 @@ nav {
 .nav-item:hover,
 .nav-item:focus {
   font-weight: bold;
-  color: var(--light-color);
+  color: var(--dark-color);
 }
 
 #hamburger {
