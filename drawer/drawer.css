@@ -1,0 +1,57 @@
+
+.drawer-container{
+    height:100vh;
+    width:100%;
+    display: none;
+    justify-content: flex-start;
+    align-items:center ;
+    position: fixed;
+    background-color:rgba(0, 0, 0, 0.22);
+    /* z-index: 1; */
+    top:0;
+}
+
+.drawer{
+    width: 15rem;
+    min-height: 15rem;
+    height: 100vh;
+    padding: 1rem;
+    padding-bottom:0;
+    position: fixed;
+    top: 0;
+    overflow: auto;
+}
+
+.drawer-title{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* .drawer-subtitle{
+
+} */
+
+.drawer-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    width: 15rem;
+    box-sizing: border-box;
+    /* height: 15rem; */
+}
+
+
+.drawer-buttons div{
+    width: inherit;
+    padding: 1rem;
+    display: flex;
+    justify-content:flex-start;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.drawer-buttons > div:hover{
+    background-color: var(--theme-color);
+    color: var(--light-color);
+}
